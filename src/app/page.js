@@ -1,12 +1,22 @@
-// src/app/page.js
-import Hero from '@/components/sections/Hero'
-import ProductHighlights from '@/components/sections/ProductHighlights'
+"use client";
+
+import About from "@/components/About";
+import CardSection from "@/components/CardSection";
+import Navbar from "@/components/Navbar";
+import Slider from "@/components/Slider";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+
+
+
+
   return (
     <div>
-      <Hero />
-      <ProductHighlights />
+      <Slider></Slider>
+      <About></About>
+      <CardSection></CardSection>
+      Hoem
     </div>
-  )
+  );
 }
