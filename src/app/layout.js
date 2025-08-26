@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Shopper",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
            <Navbar></Navbar>
           {children}
+          <Footer></Footer>
           </AuthProvider>
       </body>
     </html>
